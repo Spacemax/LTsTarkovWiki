@@ -76,6 +76,11 @@
             display: flex;
             align-items: center;
             gap: 1rem;
+            transition: opacity 0.2s ease;
+        }
+
+        .logo:hover {
+            opacity: 0.8;
         }
 
         .logo-icon {
@@ -581,7 +586,7 @@
         <!-- Header -->
         <header class="wiki-header">
             <div class="header-content">
-                <div class="logo">
+                <div class="logo" onclick="goHome()" style="cursor: pointer;">
                     <div class="logo-icon">🎮</div>
                     <div>
                         <h1>LT's Tarkov AI</h1>
@@ -1025,6 +1030,20 @@
             
             // Close search if open
             closeSearch();
+        }
+
+        // Go back to home/welcome screen
+        function goHome() {
+            document.getElementById('welcomeScreen').style.display = 'block';
+            document.getElementById('documentView').style.display = 'none';
+            
+            // Clear active nav items
+            document.querySelectorAll('.nav-item').forEach(item => {
+                item.classList.remove('active');
+            });
+            
+            // Scroll to top
+            document.querySelector('.main-content').scrollTop = 0;
         }
 
         // Search
