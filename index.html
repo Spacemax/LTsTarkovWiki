@@ -361,7 +361,7 @@
             color: var(--accent-primary);
         }
 
-        /* Known Issues */
+        /* Known Issues / Current Development */
         .issues-list {
             display: grid;
             gap: 1rem;
@@ -373,6 +373,14 @@
             padding: 1.5rem;
             border-radius: 8px;
             border-left: 4px solid var(--danger);
+        }
+
+        .issue.status-progress {
+            border-left: 4px solid var(--warning);
+        }
+
+        .issue.status-planned {
+            border-left: 4px solid var(--text-secondary);
         }
 
         .issue h3 {
@@ -476,22 +484,22 @@
                     <div class="feature-box">
                         <div class="feature-icon">🤖</div>
                         <h3>AI Companions</h3>
-                        <p>1-2 PMC companions spawn with you at the start of each raid. They share your faction (USEC/BEAR) and won't attack you.</p>
+                        <p>Up to 4 PMC companions spawn with you and are fully active in raids. They share your faction (USEC/BEAR) and function as integrated squad members.</p>
                     </div>
                     <div class="feature-box">
-                        <div class="feature-icon">👣</div>
-                        <h3>Smart Following</h3>
-                        <p>Companions automatically stay within 5-18 meters, following you through the map while maintaining tactical spacing.</p>
+                        <div class="feature-icon">👥</div>
+                        <h3>Squad Behaviors</h3>
+                        <p>Companions operate as a coordinated squad using SAIN AI. They follow you, engage enemies, and use tactical positioning. Currently being fine-tuned for optimal performance.</p>
                     </div>
                     <div class="feature-box">
                         <div class="feature-icon">⚔️</div>
-                        <h3>Combat AI</h3>
-                        <p>Companions engage your enemies, use cover, coordinate tactics, and share enemy intelligence with you.</p>
+                        <h3>Full Combat AI</h3>
+                        <p>Companions actively engage your enemies, use cover, coordinate tactics, and share enemy intelligence powered by SAIN's advanced AI systems.</p>
                     </div>
                     <div class="feature-box">
-                        <div class="feature-icon">🔄</div>
-                        <h3>Session-Based</h3>
-                        <p>Currently companions are session-only - they respawn fresh each raid with randomized loadouts.</p>
+                        <div class="feature-icon">💬</div>
+                        <h3>Chatbot Management</h3>
+                        <p>Manage your squad via in-game chatbot commands. Add/remove companions and they appear in your friend list with full PMC profiles.</p>
                     </div>
                 </div>
             </section>
@@ -628,23 +636,23 @@
             </section>
 
             <section id="known-issues" class="content-section">
-                <h2>⚠️ Known Issues</h2>
+                <h2>⚙️ Current Development</h2>
                 <div class="issues-list">
-                    <div class="issue">
-                        <h3>🔧 Gesture System</h3>
-                        <p>Gesture commands are partially implemented but not fully reliable due to game signature changes. Working on fixes.</p>
+                    <div class="issue status-progress">
+                        <h3>🎯 Squad Behavior Tuning</h3>
+                        <p>Currently fine-tuning squad AI behaviors for optimal tactical performance. Companions are fully functional and active in raids.</p>
                     </div>
-                    <div class="issue">
-                        <h3>💾 No Persistence</h3>
-                        <p>Companions don't persist across raids yet. Each raid spawns fresh companions with new identities and gear.</p>
+                    <div class="issue status-planned">
+                        <h3>🎮 Gesture Commands</h3>
+                        <p>Advanced gesture-based commands (Hold Position, Suppress, etc.) are planned for future updates. Basic squad control is working.</p>
                     </div>
-                    <div class="issue">
-                        <h3>🎒 No Gear Management</h3>
-                        <p>You cannot currently access or modify companion inventory. This feature is planned for future updates.</p>
+                    <div class="issue status-planned">
+                        <h3>💾 Cross-Raid Persistence</h3>
+                        <p>Companion identities and stats don't yet persist across raids. Each raid currently generates fresh companion profiles.</p>
                     </div>
-                    <div class="issue">
-                        <h3>📍 Limited Commands</h3>
-                        <p>Only basic follow behavior is working. Advanced commands (hold position, suppress, regroup) are in development.</p>
+                    <div class="issue status-planned">
+                        <h3>🎒 Gear Management UI</h3>
+                        <p>Direct inventory access for companions is planned. Currently, companions spawn with appropriate gear for their role.</p>
                     </div>
                 </div>
             </section>
@@ -654,23 +662,27 @@
                 <div class="faq-list">
                     <div class="faq-item">
                         <h3>Q: How many companions can I have?</h3>
-                        <p>A: Currently 1-2 companions spawn with you. This is configurable server-side.</p>
+                        <p>A: Currently up to 4 companions are fully active and working in raids. This can be configured server-side.</p>
                     </div>
                     <div class="faq-item">
-                        <h3>Q: Do companions extract with me?</h3>
-                        <p>A: Yes, if they survive and stay close to you at extract, they will extract successfully.</p>
+                        <h3>Q: Do companions actually spawn in raids?</h3>
+                        <p>A: Yes! Companions spawn with you and are fully functional AI PMCs. They fight alongside you, use cover, and coordinate with SAIN AI.</p>
+                    </div>
+                    <div class="faq-item">
+                        <h3>Q: How do I manage my squad?</h3>
+                        <p>A: Use the in-game chatbot system. Your companions appear in your friend list and can be managed via commands.</p>
                     </div>
                     <div class="faq-item">
                         <h3>Q: What happens if my companion dies?</h3>
                         <p>A: Death is permanent for that raid. They won't respawn until your next raid.</p>
                     </div>
                     <div class="faq-item">
-                        <h3>Q: Can I recruit additional companions during a raid?</h3>
-                        <p>A: Not yet - this is a planned feature for future updates.</p>
+                        <h3>Q: Do companions extract with me?</h3>
+                        <p>A: Yes, companions that survive will extract with you at the extraction point.</p>
                     </div>
                     <div class="faq-item">
                         <h3>Q: Will this work with multiplayer (Fika)?</h3>
-                        <p>A: FriendlyPMC is designed for single-player SPT. Fika compatibility is not currently planned.</p>
+                        <p>A: Fika compatibility is planned and architecture is in place, currently in testing phase.</p>
                     </div>
                 </div>
             </section>
@@ -683,7 +695,7 @@
                     <li>Join the SPT community Discord</li>
                     <li>Check the SPT Hub for updates</li>
                 </ul>
-                <p class="version-info">Current Version: LTAIV4 (Development Build)</p>
+                <p class="version-info">Current Version: 2.0.0-dev | Phase 1 Complete | Squad Tuning In Progress</p>
             </section>
         </main>
     </div>
