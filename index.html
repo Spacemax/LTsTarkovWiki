@@ -484,22 +484,32 @@
                     <div class="feature-box">
                         <div class="feature-icon">🤖</div>
                         <h3>AI Companions</h3>
-                        <p>Up to 4 PMC companions spawn with you and are fully active in raids. They share your faction (USEC/BEAR) and function as integrated squad members.</p>
+                        <p>Up to 4 PMC companions spawn with you and are fully active in raids. They share your faction and function as integrated squad members with persistent profiles.</p>
                     </div>
                     <div class="feature-box">
                         <div class="feature-icon">👥</div>
-                        <h3>Squad Behaviors</h3>
-                        <p>Companions operate as a coordinated squad using SAIN AI. They follow you, engage enemies, and use tactical positioning. Currently being fine-tuned for optimal performance.</p>
+                        <h3>Smart Movement</h3>
+                        <p>December 2025 update: Refined companion movement with role-aware positioning, smooth regrouping, sprint dynamics, and automatic unstuck/leash systems. Movement feels natural and responsive.</p>
                     </div>
                     <div class="feature-box">
                         <div class="feature-icon">⚔️</div>
-                        <h3>Full Combat AI</h3>
-                        <p>Companions actively engage your enemies, use cover, coordinate tactics, and share enemy intelligence powered by SAIN's advanced AI systems.</p>
+                        <h3>Combat AI</h3>
+                        <p>Companions engage enemies using SAIN's advanced AI. They use cover, coordinate tactics, and share intelligence. Combat squad behaviors ensure proper target selection and positioning.</p>
+                    </div>
+                    <div class="feature-box">
+                        <div class="feature-icon">🛡️</div>
+                        <h3>Companion Protection</h3>
+                        <p>Built-in guardrails prevent companions from inappropriate behaviors: they won't loot or search containers, maintain proper squad formation, and have health-based squad rebinding.</p>
                     </div>
                     <div class="feature-box">
                         <div class="feature-icon">💬</div>
                         <h3>Chatbot Management</h3>
-                        <p>Manage your squad via in-game chatbot commands. Add/remove companions and they appear in your friend list with full PMC profiles.</p>
+                        <p>Manage your squad via in-game chatbot commands. Companions appear in your friend list with full PMC profiles, visual badges, and persistent identities.</p>
+                    </div>
+                    <div class="feature-box">
+                        <div class="feature-icon">🎮</div>
+                        <h3>Experimental Features</h3>
+                        <p>Optional fireteam planning system, self-heal allowance, and inventory interaction (backpack access via raycast). These advanced features are gated and can be enabled for testing.</p>
                     </div>
                 </div>
             </section>
@@ -639,20 +649,24 @@
                 <h2>⚙️ Current Development</h2>
                 <div class="issues-list">
                     <div class="issue status-progress">
-                        <h3>🎯 Squad Behavior Tuning</h3>
-                        <p>Currently fine-tuning squad AI behaviors for optimal tactical performance. Companions are fully functional and active in raids.</p>
+                        <h3>🎯 Movement & Combat Polish</h3>
+                        <p>Fine-tuning cover-seeking behaviors, tighter facing during high-speed movement, and reducing regroup stickiness during combat. Movement system is solid with December 2025 locomotion improvements.</p>
+                    </div>
+                    <div class="issue status-progress">
+                        <h3>🔬 Experimental Fireteam System</h3>
+                        <p>Advanced fireteam planning with role-based tactics and room-clearing is available but gated OFF by default. Enable via settings for testing coordinated squad behaviors.</p>
                     </div>
                     <div class="issue status-planned">
                         <h3>🎮 Gesture Commands</h3>
-                        <p>Advanced gesture-based commands (Hold Position, Suppress, etc.) are planned for future updates. Basic squad control is working.</p>
+                        <p>Gesture and phrase command handling is partially implemented. Full gesture menu integration is in progress for voice-based squad control.</p>
                     </div>
                     <div class="issue status-planned">
-                        <h3>💾 Cross-Raid Persistence</h3>
-                        <p>Companion identities and stats don't yet persist across raids. Each raid currently generates fresh companion profiles.</p>
+                        <h3>💾 Persistence & Identity</h3>
+                        <p>Companion profiles and raid statistics persistence system (Plan 4) is designed but not yet implemented. Each raid currently uses fresh companion profiles.</p>
                     </div>
                     <div class="issue status-planned">
-                        <h3>🎒 Gear Management UI</h3>
-                        <p>Direct inventory access for companions is planned. Currently, companions spawn with appropriate gear for their role.</p>
+                        <h3>🎒 Gear Management</h3>
+                        <p>Experimental backpack access via raycast is available for testing. Full inventory/trader/loot UI integration and gear persistence (Plan 5) pending validation.</p>
                     </div>
                 </div>
             </section>
@@ -684,6 +698,14 @@
                         <h3>Q: Will this work with multiplayer (Fika)?</h3>
                         <p>A: Fika compatibility is planned and architecture is in place, currently in testing phase.</p>
                     </div>
+                    <div class="faq-item">
+                        <h3>Q: What are the experimental features?</h3>
+                        <p>A: Advanced features like fireteam planning, self-heal allowance, and backpack access are available but gated OFF by default. These can be enabled via settings for testing but may need tuning.</p>
+                    </div>
+                    <div class="faq-item">
+                        <h3>Q: Why won't my companions loot or search containers?</h3>
+                        <p>A: This is intentional - companion guardrails prevent looting and searching to avoid interfering with your gameplay. Companions focus on combat and following.</p>
+                    </div>
                 </div>
             </section>
 
@@ -695,7 +717,7 @@
                     <li>Join the SPT community Discord</li>
                     <li>Check the SPT Hub for updates</li>
                 </ul>
-                <p class="version-info">Current Version: 2.0.0-dev | Phase 1 Complete | Squad Tuning In Progress</p>
+                <p class="version-info">LTAIV4 (Dec 2025) | Movement System Refined | Combat/Locomotion Acceptable | Fireteam System Gated</p>
             </section>
         </main>
     </div>
