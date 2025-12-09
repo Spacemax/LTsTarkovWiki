@@ -541,15 +541,19 @@
                     <div class="step">
                         <div class="step-number">1</div>
                         <div class="step-content">
-                            <h3>Clean Installation Required</h3>
-                            <p><strong>Important:</strong> Remove old server mod files and the old SAIN directory before installing. This release no longer requires external dependencies.</p>
+                            <h3>Required Dependencies</h3>
+                            <p><strong>BigBrain is required</strong> - FriendlyPMC is built on SAIN 4.2.0, which requires BigBrain:</p>
+                            <ul>
+                                <li><strong><a href="https://forge.sp-tarkov.com/mod/902/bigbrain" target="_blank" style="color: var(--accent-primary);">BigBrain</a></strong> - Required AI decision framework</li>
+                            </ul>
+                            <p style="margin-top: 1rem;"><strong>Clean installation required:</strong> Remove old server mod files and the old SAIN directory before installing.</p>
                         </div>
                     </div>
                     <div class="step">
                         <div class="step-number">2</div>
                         <div class="step-content">
                             <h3>Install Mod</h3>
-                            <p><strong>Copy all files and folders into your SPT root folder.</strong> That's it! No server mod required, no complex setup.</p>
+                            <p><strong>Copy all FriendlyPMC files and folders into your SPT root folder.</strong> No additional server mod configuration needed.</p>
                         </div>
                     </div>
                     <div class="step">
@@ -570,9 +574,9 @@
                 <div style="background: #1a1a2e; padding: 1.5rem; border-radius: 8px; margin-top: 2rem;">
                     <h3 style="color: #FF10F0; margin-top: 0;">⚠️ Compatibility Notes</h3>
                     <ul style="margin-bottom: 0;">
-                        <li><strong>No server mod required</strong> - Everything is client-side</li>
+                        <li><strong>BigBrain required</strong> - SAIN dependency, must be installed</li>
+                        <li><strong>No additional server mod required</strong> - Companion spawning is client-side</li>
                         <li><strong>Possibly compatible with ABPS</strong> (Algorithmic Bot Population System)</li>
-                        <li><strong>Dependencies removed</strong> - No BigBrain, Waypoints, or SVM needed</li>
                     </ul>
                 </div>
             </section>
@@ -633,8 +637,12 @@
                 <h2>❓ Frequently Asked Questions</h2>
                 <div class="faq-list">
                     <div class="faq-item">
+                        <h3>Q: What dependencies do I need?</h3>
+                        <p>A: <strong>BigBrain is required.</strong> FriendlyPMC is built on SAIN 4.2.0, which requires BigBrain. Download from <a href="https://forge.sp-tarkov.com/mod/902/bigbrain" target="_blank" style="color: var(--accent-primary);">SPT Forge</a>.</p>
+                    </div>
+                    <div class="faq-item">
                         <h3>Q: What's changed in Playtest 5?</h3>
-                        <p>A: This release removes all external dependencies. No server mod, no BigBrain, no Waypoints, no SVM needed. Just copy files to SPT root folder and you're ready.</p>
+                        <p>A: This release removes the need for separate server mods and simplifies spawning. BigBrain is the only external dependency required. Companion spawning is now client-side (Spawn V2).</p>
                     </div>
                     <div class="faq-item">
                         <h3>Q: How many companions can I have?</h3>
@@ -650,7 +658,7 @@
                     </div>
                     <div class="faq-item">
                         <h3>Q: Is this compatible with other mods?</h3>
-                        <p>A: Possibly compatible with ABPS (Algorithmic Bot Population System). Since all dependencies are removed, compatibility should be better than previous versions.</p>
+                        <p>A: Possibly compatible with ABPS (Algorithmic Bot Population System). Since we've simplified the dependencies, compatibility should be better than previous versions.</p>
                     </div>
                     <div class="faq-item">
                         <h3>Q: How do I control my companions?</h3>
@@ -665,7 +673,8 @@
 
             <section id="support" class="content-section">
                 <h2>💬 Credits & Feedback</h2>
-                <p><strong>Base System:</strong> SAIN 4.2.0 by Solarint (MIT License) - Decision trees, vision, cover finding, movement, BigBrain integration</p>
+                <p><strong>Base System:</strong> SAIN 4.2.0 by Solarint (MIT License) - Decision trees, vision, cover finding, movement</p>
+                <p><strong>Dependencies:</strong> BigBrain by DrakiaXYZ - Required AI decision framework for SAIN</p>
                 <p><strong>FriendlyPMC:</strong> LT (kwebber321) - Companion system, spawning V2, gestures, AO, healing, looting, medic role, evac sequence, branding</p>
                 <p><strong>Playtest Feedback:</strong> We want to hear about your experience, especially with the experimental Medic Evac feature!</p>
                 <p class="version-info">FriendlyPMC Alpha - Feature Release 2 Playtest 5 | Built on SAIN 4.2.0 | Wiki Updated: December 2025</p>
