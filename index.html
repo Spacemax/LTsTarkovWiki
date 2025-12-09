@@ -151,24 +151,6 @@
             color: var(--text-secondary);
         }
 
-        .development-notice {
-            background: #dc3545;
-            color: white;
-            padding: 1.5rem 2rem;
-            margin: 2rem auto;
-            max-width: 900px;
-            border-radius: 8px;
-            text-align: center;
-            font-size: 1.125rem;
-            font-weight: 500;
-            box-shadow: 0 4px 12px rgba(220, 53, 69, 0.3);
-        }
-
-        .development-notice strong {
-            font-weight: 700;
-            font-size: 1.25rem;
-        }
-
         .content-section {
             margin-bottom: 4rem;
         }
@@ -490,64 +472,70 @@
         <main class="main-content">
             <div class="hero">
                 <h1>🤝 FriendlyPMC</h1>
-                <p class="hero-subtitle">Bring AI companions into your SPT raids</p>
+                <p class="hero-subtitle">AI Companion Squad System for SPT</p>
                 <div class="hero-description">
-                    <p>FriendlyPMC adds intelligent AI companions to Single Player Tarkov. Your companions spawn with you, follow your lead, engage enemies, and can be controlled through gestures and commands.</p>
+                    <p>FriendlyPMC v4.0 is a complete AI companion system built on SAIN 4.2.0. Your squad follows you, fights alongside you, loots battlefields, heals wounds, and can even rescue you from death with a cinematic evacuation sequence.</p>
                 </div>
             </div>
 
-            <div class="development-notice">
-                <strong>⚠️ NOTICE:</strong> This mod is not under active development as it is banned from being on SPT Forge.
-            </div>
-
             <section id="features" class="content-section">
-                <h2>✨ Current Features</h2>
+                <h2>✨ Core Features (v4.0)</h2>
                 <div class="feature-grid">
                     <div class="feature-box">
-                        <div class="feature-icon">🤖</div>
-                        <h3>AI Companions</h3>
-                        <p>Up to 4 PMC companions spawn with you and are fully active in raids. They share your faction and function as integrated squad members with persistent profiles.</p>
-                    </div>
-                    <div class="feature-box">
-                        <div class="feature-icon">👥</div>
-                        <h3>Smart Movement</h3>
-                        <p>December 2025 update: Refined companion movement with role-aware positioning, smooth regrouping, sprint dynamics, and automatic unstuck/leash systems. Movement feels natural and responsive.</p>
-                    </div>
-                    <div class="feature-box">
-                        <div class="feature-icon">⚔️</div>
-                        <h3>Combat AI</h3>
-                        <p>Companions engage enemies using SAIN's advanced AI. They use cover, coordinate tactics, and share intelligence. Combat squad behaviors ensure proper target selection and positioning.</p>
-                    </div>
-                    <div class="feature-box">
-                        <div class="feature-icon">🛡️</div>
-                        <h3>Companion Protection</h3>
-                        <p>Built-in guardrails prevent companions from inappropriate behaviors: they won't loot or search containers, maintain proper squad formation, and have health-based squad rebinding.</p>
-                    </div>
-                    <div class="feature-box">
-                        <div class="feature-icon">💬</div>
-                        <h3>Chatbot Management</h3>
-                        <p>Manage your squad via in-game chatbot commands. Companions appear in your friend list with full PMC profiles, visual badges, and persistent identities.</p>
+                        <div class="feature-icon">🚁</div>
+                        <h3>Evac Sequence</h3>
+                        <p>Get mortally wounded and your squad will drag you to extract in a cinematic experience. Black phases, combat voice lines, heartbeat audio, and tunnel vision create a "being rescued" moment. 4.8/5 stars ⭐</p>
                     </div>
                     <div class="feature-box">
                         <div class="feature-icon">🎮</div>
-                        <h3>Experimental Features</h3>
-                        <p>Optional fireteam planning system, self-heal allowance, and inventory interaction (backpack access via raycast). These advanced features are gated and can be enabled for testing.</p>
+                        <h3>Gesture Commands</h3>
+                        <p>Control your squad with 8 gesture phrases (F1 menu). Loot/Hold/Follow/Suppress commands integrate with the Area of Operations system for tactical post-combat behavior.</p>
+                    </div>
+                    <div class="feature-box">
+                        <div class="feature-icon">🏥</div>
+                        <h3>Free Healing System</h3>
+                        <p>Side-heal wounded companions when you use medkits (3m radius), or manually heal with [H] key. Completely free - your squad medic carries dedicated supplies.</p>
+                    </div>
+                    <div class="feature-box">
+                        <div class="feature-icon">🎯</div>
+                        <h3>Area of Operations</h3>
+                        <p>5 tactical states (Active/Clearing/Holding/Retreating/Dormant). In Holding phase, companions take security/worker/medic roles for post-combat operations.</p>
+                    </div>
+                    <div class="feature-box">
+                        <div class="feature-icon">💼</div>
+                        <h3>Companion Looting</h3>
+                        <p>Companions automatically gear up from battlefields. In AO Mode, only Worker role loots during Holding phase. Simple Mode lets all companions loot when safe.</p>
+                    </div>
+                    <div class="feature-box">
+                        <div class="feature-icon">⚕️</div>
+                        <h3>Squad Medic (Experimental)</h3>
+                        <p>One companion designated as medic. Post-combat triage heals wounded squadmates for free. Med loot priority ensures medic has supplies (2x bandages, 2x painkillers, etc).</p>
+                    </div>
+                    <div class="feature-box">
+                        <div class="feature-icon">👥</div>
+                        <h3>Smart Formation</h3>
+                        <p>1-4 companions with fireteam roles (PointMan, Flanker, RearSecurity). Smart follow with sprint/walk transitions, role-aware offsets, and 60m hard leash teleport.</p>
+                    </div>
+                    <div class="feature-box">
+                        <div class="feature-icon">⚔️</div>
+                        <h3>SAIN Combat AI</h3>
+                        <p>Built on SAIN 4.2.0 by Solarint. Companions use cover, coordinate tactics, share intelligence, and make combat decisions using proven AI systems.</p>
                     </div>
                 </div>
             </section>
 
             <section id="installation" class="content-section">
-                <h2>📦 Installation</h2>
+                <h2>📦 Installation & Setup</h2>
                 <div class="install-steps">
                     <div class="step">
                         <div class="step-number">1</div>
                         <div class="step-content">
-                            <h3>Requirements</h3>
+                            <h3>Dependencies</h3>
                             <ul>
-                                <li>SPT (Single Player Tarkov) - Latest version</li>
-                                <li>SAIN AI Mod - Required for companion AI behaviors</li>
-                                <li>BigBrain - Required for AI decision system</li>
-                                <li>WTT-CommonLib - Required dependency</li>
+                                <li>SPT 4.0.x (Single Player Tarkov)</li>
+                                <li>BigBrain by DrakiaXYZ - AI decision framework</li>
+                                <li>Waypoints by DrakiaXYZ - NavMesh expansion</li>
+                                <li>SVM Mod - Companion spawning via followergenerate</li>
                             </ul>
                         </div>
                     </div>
@@ -555,142 +543,62 @@
                         <div class="step-number">2</div>
                         <div class="step-content">
                             <h3>Install Mod</h3>
-                            <p>Extract FriendlyPMC files into your SPT installation directory. The mod includes both client and server components.</p>
+                            <p>Extract FriendlyPMC to <code>BepInEx/plugins/FriendlyPMC/</code>. Configure SVM to spawn companions via followergenerate route.</p>
                         </div>
                     </div>
                     <div class="step">
                         <div class="step-number">3</div>
                         <div class="step-content">
-                            <h3>Launch Game</h3>
-                            <p>Start SPT server, then launch the game. Companions will automatically spawn with you on raid start.</p>
+                            <h3>Configure Features</h3>
+                            <p>Press F6 in-game → FriendlyPMC tab. Recommended first-time settings:</p>
+                            <ul>
+                                <li><strong>EnableGestures:</strong> ON (gesture control)</li>
+                                <li><strong>EnableCompanionHealing:</strong> ON (free healing)</li>
+                                <li><strong>EnableEvacSequence:</strong> ON (cinematic rescue)</li>
+                                <li><strong>AdvancedCombatTactics:</strong> ON (AO system + roles)</li>
+                            </ul>
                         </div>
                     </div>
                 </div>
             </section>
 
             <section id="roadmap" class="content-section">
-                <h2>🗺️ Development Roadmap</h2>
-                <p class="roadmap-disclaimer">
-                    <strong>Note:</strong> The following features represent our design goals and planned development direction. 
-                    They are <strong>not guaranteed</strong> and timelines may change based on technical challenges and community feedback.
+                <h2>🎯 What's Complete vs What's Next</h2>
+                <p style="color: var(--text-secondary); margin-bottom: 2rem;">
+                    <strong>v4.0 is production ready</strong> with 10 complete features: spawning, formation, gestures, AO system, healing, looting, evac, fireteam roles, medic (experimental), and FriendlyPMC UI.
                 </p>
-                
-            <div class="roadmap-phase implemented">
-                <div class="phase-header">
-                    <div class="phase-number">1</div>
-                    <div class="phase-info">
-                        <h3>Phase 1: Foundation</h3>
-                        <p class="phase-subtitle">Basic companion spawning and following</p>
-                        <span class="phase-status status-implemented">Implemented</span>
-                    </div>
-                </div>
-                
-                <div class="phase-features">
-                    <ul>
-                        <li>AI companions that spawn with you at raid start</li><li>Companions automatically follow you and stay close</li><li>Control companions with gesture commands (Follow, Hold, Suppress, etc.)</li><li>Companion identities and stats persist across raids</li><li>Manage companion equipment and inventory</li><li>Squad formations and tactical positioning</li>
-                    </ul>
-                </div>
-                
-            </div>
-        
-            <div class="roadmap-phase implemented">
-                <div class="phase-header">
-                    <div class="phase-number">2</div>
-                    <div class="phase-info">
-                        <h3>Phase 2: Reliable Grouping</h3>
-                        <p class="phase-subtitle">Deterministic companion detection and friendly fire prevention</p>
-                        <span class="phase-status status-implemented">Implemented</span>
-                    </div>
-                </div>
-                
-                <div class="phase-features">
-                    <ul>
-                        <li>AI companions that spawn with you at raid start</li><li>Companions automatically follow you and stay close</li><li>Companion identities and stats persist across raids</li>
-                    </ul>
-                </div>
-                
-            </div>
-        
-            <div class="roadmap-phase in-progress">
-                <div class="phase-header">
-                    <div class="phase-number">3</div>
-                    <div class="phase-info">
-                        <h3>Phase 3: Gesture Commands</h3>
-                        <p class="phase-subtitle">Control companions with in-game gestures</p>
-                        <span class="phase-status status-in-progress">In Development</span>
-                    </div>
-                </div>
-                
-                <div class="phase-features">
-                    <ul>
-                        <li>Companions automatically follow you and stay close</li><li>Control companions with gesture commands (Follow, Hold, Suppress, etc.)</li>
-                    </ul>
-                </div>
-                
-            </div>
-        
-            <div class="roadmap-phase planned">
-                <div class="phase-header">
-                    <div class="phase-number">4</div>
-                    <div class="phase-info">
-                        <h3>Phase 4: Persistence</h3>
-                        <p class="phase-subtitle">Companions remember their identity and stats across raids</p>
-                        <span class="phase-status status-planned">Planned</span>
-                    </div>
-                </div>
-                
-                <div class="phase-features">
-                    <ul>
-                        <li>Control companions with gesture commands (Follow, Hold, Suppress, etc.)</li><li>Companion identities and stats persist across raids</li>
-                    </ul>
-                </div>
-                
-            </div>
-        
-            <div class="roadmap-phase planned">
-                <div class="phase-header">
-                    <div class="phase-number">5</div>
-                    <div class="phase-info">
-                        <h3>Phase 5: Gear Management</h3>
-                        <p class="phase-subtitle">Access and modify companion inventory</p>
-                        <span class="phase-status status-planned">Research Phase</span>
-                    </div>
-                </div>
-                
-                <div class="phase-features">
-                    <ul>
-                        <li>Companions automatically follow you and stay close</li><li>Control companions with gesture commands (Follow, Hold, Suppress, etc.)</li><li>Manage companion equipment and inventory</li>
-                    </ul>
-                </div>
-                
-            </div>
-        
+                <p style="color: var(--text-secondary); margin-bottom: 2rem;">
+                    <strong>v5.0 scope (3 weeks):</strong> Medic combat triage, medic supply system, voice line variety, FriendlyPMC.dll rename.
+                </p>
+                <p style="color: var(--text-secondary); margin-bottom: 2rem;">
+                    <strong>v6.0+ vision (6-10 months):</strong> LLM-driven decisions, companion personality, organic recruitment, quests, cross-raid memory. These are separate projects.
+                </p>
             </section>
 
             <section id="known-issues" class="content-section">
-                <h2>⚙️ Current Development</h2>
+                <h2>🛠️ What's Next</h2>
                 <div class="issues-list">
                     <div class="issue status-progress">
-                        <h3>🎯 Movement & Combat Polish</h3>
-                        <p>Fine-tuning cover-seeking behaviors, tighter facing during high-speed movement, and reducing regroup stickiness during combat. Movement system is solid with December 2025 locomotion improvements.</p>
+                        <h3>🏥 Medic Combat Triage (Phase 2)</h3>
+                        <p>Medics will heal critical wounds during active combat, not just post-combat. Medic supply system will track and consume inventory items.</p>
                     </div>
                     <div class="issue status-progress">
-                        <h3>🔬 Experimental Fireteam System</h3>
-                        <p>Advanced fireteam planning with role-based tactics and room-clearing is available but gated OFF by default. Enable via settings for testing coordinated squad behaviors.</p>
+                        <h3>🎙️ Voice Line Variety</h3>
+                        <p>Using specific dramatic phrases during evac flashes and combat instead of generic voice triggers. Easy addition for immersion.</p>
                     </div>
                     <div class="issue status-planned">
-                        <h3>🎮 Gesture Commands</h3>
-                        <p>Gesture and phrase command handling is partially implemented. Full gesture menu integration is in progress for voice-based squad control.</p>
-                    </div>
-                    <div class="issue status-planned">
-                        <h3>💾 Persistence & Identity</h3>
-                        <p>Companion profiles and raid statistics persistence system (Plan 4) is designed but not yet implemented. Each raid currently uses fresh companion profiles.</p>
-                    </div>
-                    <div class="issue status-planned">
-                        <h3>🎒 Gear Management</h3>
-                        <p>Experimental backpack access via raycast is available for testing. Full inventory/trader/loot UI integration and gear persistence (Plan 5) pending validation.</p>
+                        <h3>🔮 Future Vision (v6.0+)</h3>
+                        <p>LLM-driven tactical decisions, companion personality system, organic in-raid recruitment, companion quests, and cross-raid memory. These are 6-10 months of additional work.</p>
                     </div>
                 </div>
+                
+                <h3 style="margin-top: 2rem; color: var(--text-secondary);">❌ Removed Features</h3>
+                <p style="color: var(--text-secondary); margin-top: 1rem;">
+                    <strong>Companion Inventory UI:</strong> Replaced by looting system (companions gear themselves)<br>
+                    <strong>Gear Persistence:</strong> Looting + SVM config handles gear management elegantly<br>
+                    <strong>Trader Integration:</strong> Out of scope - companions use in-raid loot<br>
+                    <strong>Kernel/Clustering:</strong> Performance gains too small, wrong optimization target
+                </p>
             </section>
 
             <section id="faq" class="content-section">
@@ -698,48 +606,41 @@
                 <div class="faq-list">
                     <div class="faq-item">
                         <h3>Q: How many companions can I have?</h3>
-                        <p>A: Currently up to 4 companions are fully active and working in raids. This can be configured server-side.</p>
+                        <p>A: 1-4 companions (default: 2). Configure via SVM mod settings. Requires BigBrain, Waypoints, and SVM dependencies.</p>
                     </div>
                     <div class="faq-item">
-                        <h3>Q: Do companions actually spawn in raids?</h3>
-                        <p>A: Yes! Companions spawn with you and are fully functional AI PMCs. They fight alongside you, use cover, and coordinate with SAIN AI.</p>
+                        <h3>Q: What is the Evac Sequence?</h3>
+                        <p>A: When critically wounded (under 20% health), your squad has a chance to rescue you. Experience black phases, combat voice lines, heartbeat audio, and tunnel vision as they drag you to extract. Opt-in feature.</p>
                     </div>
                     <div class="faq-item">
-                        <h3>Q: How do I manage my squad?</h3>
-                        <p>A: Use the in-game chatbot system. Your companions appear in your friend list and can be managed via commands.</p>
+                        <h3>Q: How do gesture commands work?</h3>
+                        <p>A: Use F1 gesture wheel. Loot/CheckHim puts squad in Holding with Worker role looting. HoldPosition creates security perimeter. FollowMe/Regroup returns to Follow mode. Suppress forces Active combat.</p>
                     </div>
                     <div class="faq-item">
-                        <h3>Q: What happens if my companion dies?</h3>
-                        <p>A: Death is permanent for that raid. They won't respawn until your next raid.</p>
+                        <h3>Q: Is healing really free?</h3>
+                        <p>A: Yes. Your squad medic has dedicated supplies (concept). Use side-heal (automatic within 3m when you heal) or manual heal (look at companion, press H). Prevents negative medkit bugs.</p>
                     </div>
                     <div class="faq-item">
-                        <h3>Q: Do companions extract with me?</h3>
-                        <p>A: Yes, companions that survive will extract with you at the extraction point.</p>
+                        <h3>Q: Do companions loot automatically?</h3>
+                        <p>A: Yes (default ON). In AO Mode, only Worker role loots during Holding phase. Simple Mode allows all companions to loot when safe. They gear themselves up from battlefields.</p>
                     </div>
                     <div class="faq-item">
-                        <h3>Q: Will this work with multiplayer (Fika)?</h3>
-                        <p>A: Fika compatibility is planned and architecture is in place, currently in testing phase.</p>
+                        <h3>Q: What's the Area of Operations system?</h3>
+                        <p>A: AO system has 5 states: Active (combat), Clearing (searching), Holding (post-combat roles), Retreating (withdraw), Dormant (transit). Enable with AdvancedCombatTactics setting.</p>
                     </div>
                     <div class="faq-item">
-                        <h3>Q: What are the experimental features?</h3>
-                        <p>A: Advanced features like fireteam planning, self-heal allowance, and backpack access are available but gated OFF by default. These can be enabled via settings for testing but may need tuning.</p>
-                    </div>
-                    <div class="faq-item">
-                        <h3>Q: Why won't my companions loot or search containers?</h3>
-                        <p>A: This is intentional - companion guardrails prevent looting and searching to avoid interfering with your gameplay. Companions focus on combat and following.</p>
+                        <h3>Q: Will this work with Fika multiplayer?</h3>
+                        <p>A: Evac sequence needs network sync for multiplayer. Core companion features may work but are untested. Designed primarily for single-player SPT.</p>
                     </div>
                 </div>
             </section>
 
             <section id="support" class="content-section">
-                <h2>💬 Support & Community</h2>
-                <p>For bugs, suggestions, or questions:</p>
-                <ul>
-                    <li>Report issues on our GitHub repository</li>
-                    <li>Join the SPT community Discord</li>
-                    <li>Check the SPT Hub for updates</li>
-                </ul>
-                <p class="version-info">LTAIV4 (Dec 2025) | Movement System Refined | Combat/Locomotion Acceptable | Fireteam System Gated</p>
+                <h2>💬 Credits & Support</h2>
+                <p><strong>Base System:</strong> SAIN 4.2.0 by Solarint (MIT License) - Decision trees, vision, cover finding, movement, BigBrain integration</p>
+                <p><strong>Companion Systems:</strong> LT (kwebber321) - Spawning, gestures, AO, healing, looting, medic, evac sequence, FriendlyPMC branding</p>
+                <p><strong>Dependencies:</strong> BigBrain & Waypoints by DrakiaXYZ, SPT-AKI development team</p>
+                <p class="version-info">FriendlyPMC v4.0.0 (Dec 2025) | Built on SAIN 4.2.0 | Production Ready</p>
             </section>
         </main>
     </div>
