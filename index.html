@@ -474,173 +474,201 @@
                 <h1>🤝 FriendlyPMC</h1>
                 <p class="hero-subtitle">AI Companion Squad System for SPT</p>
                 <div class="hero-description">
-                    <p>FriendlyPMC v4.0 is a complete AI companion system built on SAIN 4.2.0. Your squad follows you, fights alongside you, loots battlefields, heals wounds, and can even rescue you from death with a cinematic evacuation sequence.</p>
+                    <p><strong>Alpha - Feature Release 2 Playtest 5</strong></p>
+                    <p>FriendlyPMC is a complete AI companion system built on SAIN 4.2.0. Your squad follows you, fights alongside you, loots battlefields, heals wounds, and can even rescue you from death with an experimental cinematic evacuation sequence.</p>
                 </div>
             </div>
 
             <section id="features" class="content-section">
-                <h2>✨ Core Features (v4.0)</h2>
+                <h2>✨ Current Features (Playtest 5)</h2>
                 <div class="feature-grid">
                     <div class="feature-box">
                         <div class="feature-icon">🚁</div>
-                        <h3>Evac Sequence</h3>
-                        <p>Get mortally wounded and your squad will drag you to extract in a cinematic experience. Black phases, combat voice lines, heartbeat audio, and tunnel vision create a "being rescued" moment. 4.8/5 stars ⭐</p>
-                    </div>
-                    <div class="feature-box">
-                        <div class="feature-icon">🎮</div>
-                        <h3>Gesture Commands</h3>
-                        <p>Control your squad with 8 gesture phrases (F1 menu). Loot/Hold/Follow/Suppress commands integrate with the Area of Operations system for tactical post-combat behavior.</p>
+                        <h3>Cinematic Medic Evac (Experimental)</h3>
+                        <p><strong>Enable in config.</strong> When critically wounded, your team stabilizes you and carries you to the evac zone. Extremely experimental - tell us what it's like to be rescued from the brink of death!</p>
                     </div>
                     <div class="feature-box">
                         <div class="feature-icon">🏥</div>
-                        <h3>Free Healing System</h3>
-                        <p>Side-heal wounded companions when you use medkits (3m radius), or manually heal with [H] key. Completely free - your squad medic carries dedicated supplies.</p>
+                        <h3>Medic Role Alpha</h3>
+                        <p><strong>Enable in config.</strong> One companion designated as squad medic with specialized healing behavior and medical supply prioritization.</p>
                     </div>
                     <div class="feature-box">
-                        <div class="feature-icon">🎯</div>
-                        <h3>Area of Operations</h3>
-                        <p>5 tactical states (Active/Clearing/Holding/Retreating/Dormant). In Holding phase, companions take security/worker/medic roles for post-combat operations.</p>
+                        <div class="feature-icon">🧭</div>
+                        <h3>Enhanced Pathfinding</h3>
+                        <p>Obstacle JumpAssist System means no more waiting for bots to take the long way. They'll find shortcuts and navigate obstacles intelligently.</p>
                     </div>
                     <div class="feature-box">
                         <div class="feature-icon">💼</div>
-                        <h3>Companion Looting</h3>
-                        <p>Companions automatically gear up from battlefields. In AO Mode, only Worker role loots during Holding phase. Simple Mode lets all companions loot when safe.</p>
-                    </div>
-                    <div class="feature-box">
-                        <div class="feature-icon">⚕️</div>
-                        <h3>Squad Medic (Experimental)</h3>
-                        <p>One companion designated as medic. Post-combat triage heals wounded squadmates for free. Med loot priority ensures medic has supplies (2x bandages, 2x painkillers, etc).</p>
+                        <h3>Smart Looting System</h3>
+                        <p>Enhanced looting with smart rotation and prioritization. Some companions loot while others patrol and stand watch for security.</p>
                     </div>
                     <div class="feature-box">
                         <div class="feature-icon">👥</div>
-                        <h3>Smart Formation</h3>
-                        <p>1-4 companions with fireteam roles (PointMan, Flanker, RearSecurity). Smart follow with sprint/walk transitions, role-aware offsets, and 60m hard leash teleport.</p>
+                        <h3>Companion Spawn V2</h3>
+                        <p>Spawn 1-4 companions (configurable in UI). <strong>No server mod required!</strong> Possibly compatible with ABPS (Algorithmic Bot Population System).</p>
+                    </div>
+                    <div class="feature-box">
+                        <div class="feature-icon">🎮</div>
+                        <h3>Gestures & Phrases</h3>
+                        <p>Native phrases and gestures enabled. Control your squad with F1 gesture wheel for tactical commands.</p>
+                    </div>
+                    <div class="feature-box">
+                        <div class="feature-icon">💉</div>
+                        <h3>Free Healing</h3>
+                        <p>Companion healing is now free until Medic V2. Keep your squad healthy without consuming resources.</p>
+                    </div>
+                    <div class="feature-box">
+                        <div class="feature-icon">🎯</div>
+                        <h3>AO System Upgrade</h3>
+                        <p>Smoother transition states with integration to phrases and gestures. Better coordination of Area of Operations behavior.</p>
                     </div>
                     <div class="feature-box">
                         <div class="feature-icon">⚔️</div>
-                        <h3>SAIN Combat AI</h3>
-                        <p>Built on SAIN 4.2.0 by Solarint. Companions use cover, coordinate tactics, share intelligence, and make combat decisions using proven AI systems.</p>
+                        <h3>Fireteam Roles Update</h3>
+                        <p>Enhanced roles including PointMan, Suppression, and Flank Security for tactical squad positioning.</p>
+                    </div>
+                    <div class="feature-box">
+                        <div class="feature-icon">🎨</div>
+                        <h3>UI Update</h3>
+                        <p>Re-organized and rebranded interface for clarity. Access via F6 menu with improved settings organization.</p>
                     </div>
                 </div>
             </section>
 
             <section id="installation" class="content-section">
-                <h2>📦 Installation & Setup</h2>
+                <h2>📦 Installation (Playtest 5)</h2>
                 <div class="install-steps">
                     <div class="step">
                         <div class="step-number">1</div>
                         <div class="step-content">
-                            <h3>Dependencies</h3>
-                            <ul>
-                                <li>SPT 4.0.x (Single Player Tarkov)</li>
-                                <li>BigBrain by DrakiaXYZ - AI decision framework</li>
-                                <li>Waypoints by DrakiaXYZ - NavMesh expansion</li>
-                                <li>SVM Mod - Companion spawning via followergenerate</li>
-                            </ul>
+                            <h3>Clean Installation Required</h3>
+                            <p><strong>Important:</strong> Remove old server mod files and the old SAIN directory before installing. This release no longer requires external dependencies.</p>
                         </div>
                     </div>
                     <div class="step">
                         <div class="step-number">2</div>
                         <div class="step-content">
                             <h3>Install Mod</h3>
-                            <p>Extract FriendlyPMC to <code>BepInEx/plugins/FriendlyPMC/</code>. Configure SVM to spawn companions via followergenerate route.</p>
+                            <p><strong>Copy all files and folders into your SPT root folder.</strong> That's it! No server mod required, no complex setup.</p>
                         </div>
                     </div>
                     <div class="step">
                         <div class="step-number">3</div>
                         <div class="step-content">
                             <h3>Configure Features</h3>
-                            <p>Press F6 in-game → FriendlyPMC tab. Recommended first-time settings:</p>
+                            <p>Launch SPT and press <strong>F6</strong> in-game to access FriendlyPMC settings:</p>
                             <ul>
-                                <li><strong>EnableGestures:</strong> ON (gesture control)</li>
-                                <li><strong>EnableCompanionHealing:</strong> ON (free healing)</li>
-                                <li><strong>EnableEvacSequence:</strong> ON (cinematic rescue)</li>
-                                <li><strong>AdvancedCombatTactics:</strong> ON (AO system + roles)</li>
+                                <li><strong>Companion Count:</strong> Set 1-4 companions (in UI)</li>
+                                <li><strong>Enable Medic Role:</strong> OFF by default (alpha feature)</li>
+                                <li><strong>Enable Medic Evac:</strong> OFF by default (experimental)</li>
+                                <li><strong>Gestures & Phrases:</strong> Enabled by default</li>
                             </ul>
                         </div>
                     </div>
                 </div>
+                
+                <div style="background: #1a1a2e; padding: 1.5rem; border-radius: 8px; margin-top: 2rem;">
+                    <h3 style="color: #FF10F0; margin-top: 0;">⚠️ Compatibility Notes</h3>
+                    <ul style="margin-bottom: 0;">
+                        <li><strong>No server mod required</strong> - Everything is client-side</li>
+                        <li><strong>Possibly compatible with ABPS</strong> (Algorithmic Bot Population System)</li>
+                        <li><strong>Dependencies removed</strong> - No BigBrain, Waypoints, or SVM needed</li>
+                    </ul>
+                </div>
             </section>
 
             <section id="roadmap" class="content-section">
-                <h2>🎯 What's Complete vs What's Next</h2>
+                <h2>🎯 Current Focus</h2>
                 <p style="color: var(--text-secondary); margin-bottom: 2rem;">
-                    <strong>v4.0 is production ready</strong> with 10 complete features: spawning, formation, gestures, AO system, healing, looting, evac, fireteam roles, medic (experimental), and FriendlyPMC UI.
+                    <strong>Playtest 5 is active testing.</strong> This release focuses on stability, improved pathfinding, and experimental features like Medic Evac.
                 </p>
-                <p style="color: var(--text-secondary); margin-bottom: 2rem;">
-                    <strong>v5.0 scope (3 weeks):</strong> Medic combat triage, medic supply system, voice line variety, FriendlyPMC.dll rename.
-                </p>
-                <p style="color: var(--text-secondary); margin-bottom: 2rem;">
-                    <strong>v6.0+ vision (6-10 months):</strong> LLM-driven decisions, companion personality, organic recruitment, quests, cross-raid memory. These are separate projects.
-                </p>
+                <div style="background: var(--bg-secondary); padding: 1.5rem; border-radius: 8px; margin-bottom: 1rem;">
+                    <h3 style="margin-top: 0; color: var(--accent-primary);">Immediate Priorities</h3>
+                    <ul style="margin-bottom: 0;">
+                        <li><strong>Fix looting deadlock</strong> - Active bug causing companions to get stuck in looting state</li>
+                        <li><strong>Stabilize Medic Evac</strong> - Gather feedback on experimental cinematic rescue feature</li>
+                        <li><strong>Polish state transitions</strong> - Smoother AO system behavior</li>
+                    </ul>
+                </div>
+                <div style="background: var(--bg-secondary); padding: 1.5rem; border-radius: 8px;">
+                    <h3 style="margin-top: 0; color: var(--accent-primary);">Near Future</h3>
+                    <ul style="margin-bottom: 0;">
+                        <li><strong>Medic Role V2</strong> - Supply tracking and consumption system</li>
+                        <li><strong>Enhanced pathfinding polish</strong> - Further improvements to JumpAssist system</li>
+                        <li><strong>Looting optimization</strong> - Better rotation and coordination</li>
+                    </ul>
+                </div>
+            </section>
             </section>
 
             <section id="known-issues" class="content-section">
-                <h2>🛠️ What's Next</h2>
+                <h2>⚠️ Known Issues (Playtest 5)</h2>
                 <div class="issues-list">
-                    <div class="issue status-progress">
-                        <h3>🏥 Medic Combat Triage (Phase 2)</h3>
-                        <p>Medics will heal critical wounds during active combat, not just post-combat. Medic supply system will track and consume inventory items.</p>
+                    <div class="issue" style="border-left: 4px solid #dc3545;">
+                        <h3>🔧 Looting Deadlock (Active Bug)</h3>
+                        <p><strong>Currently diagnosing and fixing.</strong> Companions can get stuck in looting state and won't transition back to AO mode.</p>
+                        <p><strong>Workaround:</strong> Try using commands or running off to move them along. When they encounter combat, they'll be forced into the next AO state which will break them out of the buggy state.</p>
+                        <p><strong>Status:</strong> Fix expected by tomorrow.</p>
                     </div>
                     <div class="issue status-progress">
-                        <h3>🎙️ Voice Line Variety</h3>
-                        <p>Using specific dramatic phrases during evac flashes and combat instead of generic voice triggers. Easy addition for immersion.</p>
-                    </div>
-                    <div class="issue status-planned">
-                        <h3>🔮 Future Vision (v6.0+)</h3>
-                        <p>LLM-driven tactical decisions, companion personality system, organic in-raid recruitment, companion quests, and cross-raid memory. These are 6-10 months of additional work.</p>
+                        <h3>🚁 Medic Evac (Experimental)</h3>
+                        <p><strong>Extremely experimental feature.</strong> The cinematic medic evac is brand new and may have unexpected behavior. If it works as designed, please share your experience!</p>
                     </div>
                 </div>
                 
-                <h3 style="margin-top: 2rem; color: var(--text-secondary);">❌ Removed Features</h3>
-                <p style="color: var(--text-secondary); margin-top: 1rem;">
-                    <strong>Companion Inventory UI:</strong> Replaced by looting system (companions gear themselves)<br>
-                    <strong>Gear Persistence:</strong> Looting + SVM config handles gear management elegantly<br>
-                    <strong>Trader Integration:</strong> Out of scope - companions use in-raid loot<br>
-                    <strong>Kernel/Clustering:</strong> Performance gains too small, wrong optimization target
-                </p>
+                <h2 style="margin-top: 3rem;">🔮 What's Next</h2>
+                <div class="issues-list">
+                    <div class="issue status-progress">
+                        <h3>🏥 Medic Role V2</h3>
+                        <p>Enhanced medic system with supply tracking and consumption. Current alpha medic provides free healing.</p>
+                    </div>
+                    <div class="issue status-progress">
+                        <h3>🐛 Bug Fixes</h3>
+                        <p>Fixing looting deadlock and polishing state transitions. Testing and stability improvements ongoing.</p>
+                    </div>
+                </div>
             </section>
 
             <section id="faq" class="content-section">
                 <h2>❓ Frequently Asked Questions</h2>
                 <div class="faq-list">
                     <div class="faq-item">
+                        <h3>Q: What's changed in Playtest 5?</h3>
+                        <p>A: This release removes all external dependencies. No server mod, no BigBrain, no Waypoints, no SVM needed. Just copy files to SPT root folder and you're ready.</p>
+                    </div>
+                    <div class="faq-item">
                         <h3>Q: How many companions can I have?</h3>
-                        <p>A: 1-4 companions (default: 2). Configure via SVM mod settings. Requires BigBrain, Waypoints, and SVM dependencies.</p>
+                        <p>A: 1-4 companions, configurable directly in the F6 UI. No server-side configuration required.</p>
                     </div>
                     <div class="faq-item">
-                        <h3>Q: What is the Evac Sequence?</h3>
-                        <p>A: When critically wounded (under 20% health), your squad has a chance to rescue you. Experience black phases, combat voice lines, heartbeat audio, and tunnel vision as they drag you to extract. Opt-in feature.</p>
+                        <h3>Q: What is the Medic Evac feature?</h3>
+                        <p>A: <strong>Extremely experimental.</strong> When critically wounded, your squad stabilizes you and carries you to the evac zone. Enable in config to test. We want to hear your experience!</p>
                     </div>
                     <div class="faq-item">
-                        <h3>Q: How do gesture commands work?</h3>
-                        <p>A: Use F1 gesture wheel. Loot/CheckHim puts squad in Holding with Worker role looting. HoldPosition creates security perimeter. FollowMe/Regroup returns to Follow mode. Suppress forces Active combat.</p>
+                        <h3>Q: My companions are stuck looting, what do I do?</h3>
+                        <p>A: Known bug being fixed. Try using gesture commands or running away to move them along. Combat will force them into a new state and break the deadlock.</p>
                     </div>
                     <div class="faq-item">
-                        <h3>Q: Is healing really free?</h3>
-                        <p>A: Yes. Your squad medic has dedicated supplies (concept). Use side-heal (automatic within 3m when you heal) or manual heal (look at companion, press H). Prevents negative medkit bugs.</p>
+                        <h3>Q: Is this compatible with other mods?</h3>
+                        <p>A: Possibly compatible with ABPS (Algorithmic Bot Population System). Since all dependencies are removed, compatibility should be better than previous versions.</p>
                     </div>
                     <div class="faq-item">
-                        <h3>Q: Do companions loot automatically?</h3>
-                        <p>A: Yes (default ON). In AO Mode, only Worker role loots during Holding phase. Simple Mode allows all companions to loot when safe. They gear themselves up from battlefields.</p>
+                        <h3>Q: How do I control my companions?</h3>
+                        <p>A: Use the F1 gesture wheel. Native phrases and gestures are enabled by default and integrate with the AO (Area of Operations) system.</p>
                     </div>
                     <div class="faq-item">
-                        <h3>Q: What's the Area of Operations system?</h3>
-                        <p>A: AO system has 5 states: Active (combat), Clearing (searching), Holding (post-combat roles), Retreating (withdraw), Dormant (transit). Enable with AdvancedCombatTactics setting.</p>
-                    </div>
-                    <div class="faq-item">
-                        <h3>Q: Will this work with Fika multiplayer?</h3>
-                        <p>A: Evac sequence needs network sync for multiplayer. Core companion features may work but are untested. Designed primarily for single-player SPT.</p>
+                        <h3>Q: Is healing still free?</h3>
+                        <p>A: Yes! Companion healing is free until Medic V2 is released. The alpha Medic Role can be enabled in config for additional features.</p>
                     </div>
                 </div>
             </section>
 
             <section id="support" class="content-section">
-                <h2>💬 Credits & Support</h2>
+                <h2>💬 Credits & Feedback</h2>
                 <p><strong>Base System:</strong> SAIN 4.2.0 by Solarint (MIT License) - Decision trees, vision, cover finding, movement, BigBrain integration</p>
-                <p><strong>Companion Systems:</strong> LT (kwebber321) - Spawning, gestures, AO, healing, looting, medic, evac sequence, FriendlyPMC branding</p>
-                <p><strong>Dependencies:</strong> BigBrain & Waypoints by DrakiaXYZ, SPT-AKI development team</p>
-                <p class="version-info">FriendlyPMC v4.0.0 (Dec 2025) | Built on SAIN 4.2.0 | Production Ready</p>
+                <p><strong>FriendlyPMC:</strong> LT (kwebber321) - Companion system, spawning V2, gestures, AO, healing, looting, medic role, evac sequence, branding</p>
+                <p><strong>Playtest Feedback:</strong> We want to hear about your experience, especially with the experimental Medic Evac feature!</p>
+                <p class="version-info">FriendlyPMC Alpha - Feature Release 2 Playtest 5 | Built on SAIN 4.2.0 | Wiki Updated: December 2025</p>
             </section>
         </main>
     </div>
